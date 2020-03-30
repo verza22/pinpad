@@ -6,13 +6,14 @@ import styles from './estilos'
 function procesoPago(){
     console.log("--------PROCESO PAGO--------")
     PinpadNative.procesoPago(
-        1,      //Tipo transacción
-        1,      //Red Adquiriente
-        "0",    //Codigo Diferido
+        1,      //Tipo transacción (Siempre corriente 1)
+        1,      //Red Adquiriente (Datafast, Medianet o Austro) (SMM)
+        "0",    //Codigo Diferido (Siempre 0 sin diferido)
         "1.00", //Base 0
         "1.00", //Base Imponible
         "0.12", //IVA
-        "2.12"  //Monto Total
+        "2.12", //Monto Total,
+        3       // 1 Tarjeta, 2 Bp Wallet, 3 PayClub
         ,(res => {
         console.log(res)
     }))

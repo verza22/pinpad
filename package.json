@@ -13,7 +13,7 @@
     "react": "16.11.0",
     "react-native": "0.62.0",
     "react-native-loading-spinner-overlay": "^1.1.0",
-    "react-native-pinpad-native": "^1.0.22"
+    "react-native-pinpad-native": "^1.0.28"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

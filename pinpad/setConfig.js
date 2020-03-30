@@ -20,7 +20,9 @@ function setConfig(){
         "3000",          //Lote
         "1001",          //Referencia
         2,               //Version
-        2                //SHA
+        2,               //SHA,
+        true,            //Emular comunicación
+        true             //Emular pago éxitoso
         ,(res => {
         console.log(res)
     }))
