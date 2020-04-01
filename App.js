@@ -6,6 +6,7 @@ import EnviarConfiguraciones from './pinpad/sendConfig'
 import ProcesoControl from './pinpad/procesoControl'
 import LecturaTarjeta from './pinpad/lecturaTarjeta'
 import ProcesoPago from './pinpad/procesoPago'
+import Reverso from './pinpad/reverso'
 
 import styles from './pinpad/estilos'
 
@@ -18,6 +19,7 @@ export default () => {
       <ProcesoControl />
       <LecturaTarjeta />
       <ProcesoPago />
+      <Reverso />
     </View>
   );
 };
